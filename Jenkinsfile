@@ -17,7 +17,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Deploy-nginx') {
             steps {
                 deployApp(IMAGE_NAME, TAG)
             }
