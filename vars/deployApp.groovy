@@ -1,7 +1,7 @@
-def call(String appName, String environment) {
-    echo "Deploying ${appName} to ${environment}..."
+def call(String ImageName, String Tag) {
+    echo "Deploying ${ImageName} to ${Tag}..."
     sh """
-        docker pull ${appName}:${environment}
-        docker run -d ${appName}:${environment}
+        docker pull ${ImageName}:${Tag}
+        docker run -d ${ImageName}:${Tag}
     """
 }
