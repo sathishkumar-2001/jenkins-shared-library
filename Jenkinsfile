@@ -19,7 +19,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                deployApp(APP_NAME, ENVIRONMENT)
+                deployApp(IMAGE_NAME, TAG)
             }
         }
     }
