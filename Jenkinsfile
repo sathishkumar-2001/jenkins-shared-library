@@ -4,8 +4,8 @@ pipeline {
     agent any
 
     environment {
-        APP_NAME = "my-node-app"
-        ENVIRONMENT = "production"
+        IMAGE_NAME = "nginx"
+        TAG = "latest"
     }
 
     stages {
