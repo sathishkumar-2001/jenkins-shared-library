@@ -1,4 +1,4 @@
-@Library('my-shared-library') _  // Load the shared library
+@Library('docker-pull-container-library') _  // Load the shared library
 
 pipeline {
     agent any
